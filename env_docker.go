@@ -228,7 +228,7 @@ func (e *DockerEnvironment) SharedDir() string {
 }
 
 func (e *DockerEnvironment) buildDockerRunArgs(name string, ports map[string]int, opts StartOptions) []string {
-	args := []string{"--rm", "--net=" + e.networkName, "--name=" + dockerNetworkContainerHost(e.networkName, name), "--hostname=" + name}
+	args := []string{"--rm", "--net=" + e.networkName, "--name=" + dockerNetworkContainerHost(e.networkName, name), "--hostname=" + name, "--platform=" + opts.Platform}
 
 	// Mount the shared/ directory into the container. We share all containers dir to each other to allow easier scenarios.
 	args = append(args, "-v", fmt.Sprintf("%s:%s:z", e.dir, dockerLocalSharedDir))
@@ -264,10 +264,6 @@ func (e *DockerEnvironment) buildDockerRunArgs(name string, ports map[string]int
 
 	if opts.LimitCPUs > 0 {
 		args = append(args, "--cpus", fmt.Sprintf("%f", opts.LimitCPUs))
-	}
-
-	if opts.Platform != "" {
-		args = append(args, "--platform", opts.Platform)
 	}
 
 	// Published ports.

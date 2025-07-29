@@ -251,16 +251,20 @@ func newCadvisor(env e2e.Environment, name string, cgroupPrefixes ...string) e2e
 			"--docker_only=true",
 			"--raw_cgroup_prefix_whitelist="+strings.Join(cgroupPrefixes, ","),
 		),
-		Image: "gcr.io/cadvisor/cadvisor:v0.44.0",
+		Image: "gcr.io/cadvisor/cadvisor:v0.47.2",
 		// See https://github.com/google/cadvisor/blob/master/docs/running.md.
 		Volumes: []string{
 			"/:/rootfs:ro",
-			"/var/run:/var/run:rw",
+			"/var/run:/var/run:ro",
 			"/sys:/sys:ro",
 			"/var/lib/docker/:/var/lib/docker:ro",
+			"/dev/disk/:/dev/disk:ro",
+			"/var/run/docker.sock:/var/run/docker.sock:ro",
+			"/etc/machine-id:/etc/machine-id:ro",
+			"/var/lib/dbus/machine-id:/var/lib/dbus/machine-id:ro",
 		},
 		UserNs:     "host",
 		Privileged: true,
-		Platform:   "linux/arm64", // TODO(TheNhatAT): hardcoded for now, for MacOs env.
+		Platform:   "linux/aarch64", // TODO(TheNhatAT): hardcoded for now, for MacOs env.
 	})
 }
