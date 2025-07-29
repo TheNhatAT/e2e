@@ -19,10 +19,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/TheNhatAT/e2e"
+	e2emon "github.com/TheNhatAT/e2e/monitoring"
+	e2eprof "github.com/TheNhatAT/e2e/profiling"
 	"github.com/efficientgo/core/errors"
-	"github.com/efficientgo/e2e"
-	e2emon "github.com/efficientgo/e2e/monitoring"
-	e2eprof "github.com/efficientgo/e2e/profiling"
 )
 
 const (

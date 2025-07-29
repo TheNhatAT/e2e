@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/efficientgo/e2e"
-	e2eobs "github.com/efficientgo/e2e/observable"
+	"github.com/TheNhatAT/e2e"
+	e2eobs "github.com/TheNhatAT/e2e/observable"
 )
 
 func NewThanosQuerier(env e2e.Environment, name string, endpointsAddresses []string, opts ...Option) *e2eobs.Observable {

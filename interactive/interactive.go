@@ -14,7 +14,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/efficientgo/e2e/host"
+	"github.com/TheNhatAT/e2e/host"
 
 	"github.com/efficientgo/core/errors"
 )

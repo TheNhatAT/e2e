@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/TheNhatAT/e2e"
+	e2edb "github.com/TheNhatAT/e2e/db"
+	e2emon "github.com/TheNhatAT/e2e/monitoring"
 	"github.com/efficientgo/core/testutil"
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
-	e2emon "github.com/efficientgo/e2e/monitoring"
 )
 
 func wgetFlagsCmd(hostPort string) e2e.Command {

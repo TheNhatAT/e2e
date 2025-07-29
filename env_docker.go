@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/efficientgo/e2e/host"
+	"github.com/TheNhatAT/e2e/host"
 
 	"github.com/efficientgo/core/backoff"
 	"github.com/efficientgo/core/errors"

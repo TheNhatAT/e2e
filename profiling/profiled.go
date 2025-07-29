@@ -4,9 +4,9 @@
 package e2eprof
 
 import (
+	"github.com/TheNhatAT/e2e"
+	"github.com/TheNhatAT/e2e/profiling/parcaconfig"
 	"github.com/efficientgo/core/errors"
-	"github.com/efficientgo/e2e"
-	"github.com/efficientgo/e2e/profiling/parcaconfig"
 )
 
 type Target struct {

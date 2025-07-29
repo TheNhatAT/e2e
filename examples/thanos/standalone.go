@@ -9,13 +9,13 @@ import (
 	"log"
 	"syscall"
 
+	"github.com/TheNhatAT/e2e"
+	e2edb "github.com/TheNhatAT/e2e/db"
+	e2einteractive "github.com/TheNhatAT/e2e/interactive"
+	e2emon "github.com/TheNhatAT/e2e/monitoring"
+	e2eprof "github.com/TheNhatAT/e2e/profiling"
 	"github.com/efficientgo/core/errors"
 	"github.com/efficientgo/core/merrors"
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
-	e2einteractive "github.com/efficientgo/e2e/interactive"
-	e2emon "github.com/efficientgo/e2e/monitoring"
-	e2eprof "github.com/efficientgo/e2e/profiling"
 	"github.com/oklog/run"
 )
 

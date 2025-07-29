@@ -10,8 +10,8 @@ import (
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 
+	"github.com/TheNhatAT/e2e"
 	"github.com/efficientgo/core/testutil"
-	"github.com/efficientgo/e2e"
 )
 
 func TestMinio(t *testing.T) {

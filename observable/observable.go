@@ -4,11 +4,11 @@
 package e2eobs
 
 import (
+	"github.com/TheNhatAT/e2e"
+	e2emon "github.com/TheNhatAT/e2e/monitoring"
+	e2eprof "github.com/TheNhatAT/e2e/profiling"
+	"github.com/TheNhatAT/e2e/profiling/parcaconfig"
 	"github.com/efficientgo/core/backoff"
-	"github.com/efficientgo/e2e"
-	e2emon "github.com/efficientgo/e2e/monitoring"
-	e2eprof "github.com/efficientgo/e2e/profiling"
-	"github.com/efficientgo/e2e/profiling/parcaconfig"
 )
 
 // Observable represents a runnable that is both instrumented and profiled. Typically, all well-written Go services
