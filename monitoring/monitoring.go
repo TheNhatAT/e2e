@@ -212,6 +212,7 @@ func newCadvisor(env e2e.Environment, name string, cgroupPrefixes ...string) e2e
 			// TODO(bwplotka): Add option to scope to dockers only from this network.
 			"--docker_only=true",
 			"--raw_cgroup_prefix_whitelist="+strings.Join(cgroupPrefixes, ","),
+			"--platform=linux/arm64",
 		),
 		Image: "gcr.io/cadvisor/cadvisor:v0.39.3",
 		// See https://github.com/google/cadvisor/blob/master/docs/running.md.
