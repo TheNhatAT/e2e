@@ -274,7 +274,7 @@ func (e *DockerEnvironment) SharedDir() string {
 const dockerCPUEnvName = "E2E_DOCKER_CPUS"
 
 func (e *DockerEnvironment) buildDockerRunArgs(name string, ports map[string]int, opts StartOptions) []string {
-	args := []string{"--rm", "--net=" + e.networkName, "--name=" + dockerNetworkContainerHost(e.networkName, name), "--hostname=" + name}
+	args := []string{"--rm", "--net=" + e.networkName, "--name=" + dockerNetworkContainerHost(e.networkName, name), "--hostname=" + name, "--platform=" + opts.Platform}
 
 	// Mount the docker env working directory into the container. It's shared across all containers to allow easier scenarios.
 	args = append(args, "-v", fmt.Sprintf("%s:%s:z", e.dir, e.dir))
