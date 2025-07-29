@@ -266,6 +266,10 @@ func (e *DockerEnvironment) buildDockerRunArgs(name string, ports map[string]int
 		args = append(args, "--cpus", fmt.Sprintf("%f", opts.LimitCPUs))
 	}
 
+	if opts.Platform != "" {
+		args = append(args, "--platform", opts.Platform)
+	}
+
 	// Published ports.
 	for _, port := range ports {
 		args = append(args, "-p", strconv.Itoa(port))

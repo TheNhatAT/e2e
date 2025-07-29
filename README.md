@@ -1,6 +1,6 @@
 # e2e
 
-[![golang docs](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/efficientgo/e2e)
+[![golang docs](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/TheNhatAT/e2e)
 
 Go Module providing robust framework for running complex workload scenarios in isolation, using Go and Docker. For integration, e2e tests, benchmarks and more! 💪
 
@@ -23,7 +23,7 @@ There are three main use cases envisioned for this Go module:
 
 Let's go through an example leveraging the `go test` flow:
 
-1. Get the `e2e` Go module to your `go.mod` using `go get github.com/efficientgo/e2e`.
+1. Get the `e2e` Go module to your `go.mod` using `go get github.com/TheNhatAT/e2e`.
 2. Implement a test. Start by creating an environment. Currently `e2e` supports Docker environment only. Use a unique name for all of your tests. It's recommended to keep it stable so resources are consistently cleaned.
 
    ```go mdox-exec="sed -n '22,26p' examples/thanos/e2etest_test.go"

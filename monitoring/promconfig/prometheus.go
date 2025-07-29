@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	sdconfig "github.com/efficientgo/e2e/monitoring/promconfig/discovery/config"
+	sdconfig "github.com/TheNhatAT/e2e/monitoring/promconfig/discovery/config"
 	"github.com/pkg/errors"
 	config_util "github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"

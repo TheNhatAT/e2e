@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/efficientgo/e2e"
+	"github.com/TheNhatAT/e2e"
 )
 
 func NewThanosQuerier(env e2e.Environment, name string, endpointsAddresses []string, opts ...Option) e2e.InstrumentedRunnable {

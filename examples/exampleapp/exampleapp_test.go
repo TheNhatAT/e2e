@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
-	e2einteractive "github.com/efficientgo/e2e/interactive"
+	"github.com/TheNhatAT/e2e"
+	e2edb "github.com/TheNhatAT/e2e/db"
+	e2einteractive "github.com/TheNhatAT/e2e/interactive"
 	"github.com/efficientgo/tools/core/pkg/backoff"
 	"github.com/efficientgo/tools/core/pkg/testutil"
 )

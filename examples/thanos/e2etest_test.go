@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
+	"github.com/TheNhatAT/e2e"
+	e2edb "github.com/TheNhatAT/e2e/db"
 	"github.com/efficientgo/tools/core/pkg/testutil"
 	"github.com/prometheus/client_golang/api"
 	v1 "github.com/prometheus/client_golang/api/prometheus/v1"

@@ -11,12 +11,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
-	e2einteractive "github.com/efficientgo/e2e/interactive"
-	"github.com/efficientgo/e2e/monitoring/promconfig"
-	sdconfig "github.com/efficientgo/e2e/monitoring/promconfig/discovery/config"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/targetgroup"
+	"github.com/TheNhatAT/e2e"
+	e2edb "github.com/TheNhatAT/e2e/db"
+	e2einteractive "github.com/TheNhatAT/e2e/interactive"
+	"github.com/TheNhatAT/e2e/monitoring/promconfig"
+	sdconfig "github.com/TheNhatAT/e2e/monitoring/promconfig/discovery/config"
+	"github.com/TheNhatAT/e2e/monitoring/promconfig/discovery/targetgroup"
 	"github.com/efficientgo/tools/core/pkg/errcapture"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
@@ -261,5 +261,6 @@ func newCadvisor(env e2e.Environment, name string, cgroupPrefixes ...string) e2e
 		},
 		UserNs:     "host",
 		Privileged: true,
+		Platform:   "linux/arm64", // TODO(TheNhatAT): hardcoded for now, for MacOs env.
 	})
 }

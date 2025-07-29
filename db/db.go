@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/efficientgo/e2e"
+	"github.com/TheNhatAT/e2e"
 )
 
 const (

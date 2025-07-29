@@ -80,6 +80,8 @@ type StartOptions struct {
 
 	LimitMemoryBytes uint
 	LimitCPUs        float64
+
+	Platform string // Platform is the platform to use for the runnable, e.g. "linux/arm64".
 }
 
 type RunnableCapabilities string

@@ -1,4 +1,4 @@
-module github.com/efficientgo/e2e
+module github.com/TheNhatAT/e2e
 
 go 1.15
 
