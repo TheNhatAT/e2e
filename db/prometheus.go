@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/efficientgo/e2e"
+	"github.com/TheNhatAT/e2e"
 	"github.com/pkg/errors"
 )
 

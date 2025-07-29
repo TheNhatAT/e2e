@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
+	"github.com/TheNhatAT/e2e"
+	e2edb "github.com/TheNhatAT/e2e/db"
 	"github.com/efficientgo/tools/core/pkg/testutil"
 )
 
