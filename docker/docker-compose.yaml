@@ -1,5 +1,7 @@
 version: "3.8"
 
+# https://github.com/google/cadvisor/issues/2838#issuecomment-2966600885
+# for setting up cAdvisor in MacOS with Apple M Chip
 services:
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:v0.47.2

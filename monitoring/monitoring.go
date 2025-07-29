@@ -84,6 +84,7 @@ scrape_configs:
 		Command:   e2e.NewCommandWithoutEntrypoint("prometheus", e2e.BuildArgs(args)...),
 		Readiness: e2e.NewHTTPReadinessProbe("http", "/-/ready", 200, 200),
 		User:      strconv.Itoa(os.Getuid()),
+		Platform:  "linux/aarch64", // TODO(TheNhatAT): hardcoded for now, for MacOs env.
 	}), "http")
 
 	return &Prometheus{
